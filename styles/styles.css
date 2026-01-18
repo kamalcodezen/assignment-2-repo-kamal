@@ -22,7 +22,7 @@
 
 /* P tag gray color */
 .gray-color {
-    color: #d1ced5;
+    color: #aa9fb8;
     font-size: 16px;
     font-weight: 400;
     line-height: clamp(1.25rem, 2vw, 1.5rem);
@@ -250,4 +250,62 @@
 .about-container .about-count {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+/* choose area style here */
+.choose {
+    background-color: #230e3d;
+}
+
+.choose-container {
+    padding-block: clamp(3.5rem, 8vw, 7.5rem);
+
+}
+
+.choose-container .section-heading {
+    margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.choose-box {
+    gap: clamp(1rem, 3vw, 1.875rem);
+}
+
+.choose-box .box {
+    background-color: #2a0f4d;
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.choose-box .box>h3 {
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    font: 700;
+    color: white;
+    margin-bottom: clamp(0.5rem, 1.5vw, 1rem)
+}
+
+.choose-box .box>p {
+    color: #aa9fb8;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: clamp(1.25rem, 2vw, 1.5rem);
+}
+
+.premium-box {
+    grid-area: premium;
+}
+
+.mobile-box {
+    grid-area: mobile;
+}
+
+.global-box {
+    grid-area: global
+}
+
+.exclusive-box {
+    grid-area: exclusive;
+}
+
+.rich-box {
+    grid-area: rich;
 }
