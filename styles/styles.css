@@ -62,13 +62,15 @@ h3 {
 .display-flex {
     display: flex;
 }
-    
+
 .primary-btn {
     font-weight: 500;
     color: white;
-    padding: 12px 16px;
+    padding: 10px 16px;
     border-radius: 46px;
     gap: 8px;
+    border: none;
+    cursor: pointer;
 }
 
 /* shared style :start */
@@ -97,6 +99,8 @@ header {
 
 .menu-icon {
     display: none;
+    font-size: 30px;
+    color: white;
 }
 
 .nav-container .menu {
