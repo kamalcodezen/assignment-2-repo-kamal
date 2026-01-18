@@ -1,5 +1,11 @@
 /* Laptop */
-@media screen and (min-width: 992px) and (max-width: 1199px) {}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    /* about section */
+    .about-container .about-count {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
 
 /* Mobile small */
@@ -16,5 +22,11 @@
 
     .menu-icon {
         display: block;
+    }
+
+    /* about section */
+    .about-container .about-count {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
     }
 }

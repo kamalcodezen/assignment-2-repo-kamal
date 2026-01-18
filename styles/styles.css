@@ -241,10 +241,12 @@
     color: #00ff88;
 }
 
+.about-count .count-card {
+    text-align: center;
+
+}
+
 .about-container .about-count {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: clamp(1.5rem, 4vw, 3.125rem);
-    justify-items: center;
-
+    grid-template-columns: repeat(4, 1fr);
 }
