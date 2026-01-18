@@ -73,6 +73,10 @@ h3 {
     cursor: pointer;
 }
 
+.hide {
+    display: none;
+}
+
 /* shared style :start */
 
 /* header style start */
@@ -123,4 +127,25 @@ header {
     flex-direction: column;
     text-align: center;
     padding-block: clamp(3rem, 7vw, 6.3125rem);
+}
+
+.banner-container .banner-img {
+    width: clamp(14rem, 30vw, 21.875rem);
+    height: clamp(14rem, 30vw, 21.875rem);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.banner-img:hover {
+    background-color: white;
+}
+
+.banner-img img {
+    width: clamp(14rem, 28vw, 20.9375rem);
+    height: clamp(14rem, 28vw, 20.9375rem);
+    object-fit: cover;
+    border-radius: 50%;
 }
