@@ -53,9 +53,11 @@
 }
 
 /* --common color */
-h1,
-h2 {
+.section-heading {
     color: rgba(255, 255, 255, 1);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    line-height: clamp(2.5rem, 6vw, 3.625rem);
 }
 
 .display-flex {
@@ -201,4 +203,38 @@ h2 {
 
 .banner-btn .spotify-btn {
     align-items: center;
+}
+
+/* about section code here */
+.about {
+    background: #1a0b2e;
+}
+
+.about .about-container {
+    padding-bottom: clamp(3.75rem, 8vw, 7.5rem);
+}
+.about-content{
+    text-align: center;
+}
+.about-content .section-heading {
+    margin-bottom: clamp(0.5rem, 1.2vw, 1rem);
+}
+
+.about-info .info-1 {
+    margin-bottom: clamp(0.5rem, 1.2vw, 1rem);
+}
+
+.about-info .info-2 {
+    padding-bottom: clamp(3rem, 6.5vw, 5rem);
+}
+
+.about-info hr {
+    opacity: 0.2;
+    margin-block: clamp(3rem, 6.5vw, 5rem);
+}
+
+.about-count .count-card .count {
+   font-size: clamp(2rem, 5vw, 3rem);
+   font-weight: 800;
+    color: #00ff88;
 }
