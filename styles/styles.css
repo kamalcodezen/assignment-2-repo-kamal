@@ -1,6 +1,52 @@
 /* GOOGLE FONT */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* --all  body  */
 .font-inter {
     font-family: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding-inline: clamp(1rem, 4vw, 2rem);
+}
+
+/* P tag gray color */
+.gray-color {
+    color: #d1ced5;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: clamp(1.25rem, 2vw, 1.5rem);
+}
+
+/* background color */
+.linear-bg {
+    background: linear-gradient(to right,
+            #f3c94a 0%,
+            #ff6b8a 35%,
+            #c84dbb 60%,
+            #8e5ae3 80%,
+            #6b5cff 100%);
+}
+
+/* color text */
+.primary-color {
+    background: linear-gradient(to right,
+            #f3c94a 0%,
+            #ff6b8a 35%,
+            #c84dbb 60%,
+            #8e5ae3 80%,
+            #6b5cff 100%);
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
