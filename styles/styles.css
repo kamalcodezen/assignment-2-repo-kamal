@@ -115,3 +115,12 @@ header {
     text-decoration: none;
     color: #e8e6ea;
 }
+
+/* banner style here */
+.banner-container {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-block: clamp(3rem, 7vw, 6.3125rem);
+}
