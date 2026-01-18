@@ -12,6 +12,7 @@
     box-sizing: border-box;
 }
 
+/* shared style :start */
 .container {
     width: 100%;
     max-width: 75rem;
@@ -49,4 +50,21 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* --common color */
+h1,
+h2,
+h3 {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* shared style :start */
+
+/* header style start */
+header {
+    background: url("../assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100dvh;
 }
