@@ -139,7 +139,6 @@ h3 {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-bottom: clamp(1.25rem, 2.5vw, 2.5rem);
 }
 
 .banner-round-img {
@@ -165,10 +164,42 @@ h3 {
     position: absolute;
     z-index: 3;
     top: 4%;
-  left: 72%;
+    left: 72%;
 }
 
-/* .banner-round-img:hover {
-    border: 3px solid yellow;
+.banner-round-img:hover {
+    border: 5px solid white;
     border-radius: 50%;
-} */
+}
+
+.banner-content {
+    padding-top: clamp(3rem, 5vw, 5.0625rem);
+}
+
+.banner-content .banner-info {
+    margin-bottom: clamp(0.75rem, 1.8vw, 1.5rem);
+}
+
+.banner-btn {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+
+}
+
+.banner-btn .subscribe-btn {
+    font-weight: 500;
+    color: #00ff88;
+    background: transparent;
+    padding: 10px 16px;
+    border-radius: 46px;
+    gap: 8px;
+    border: 1px solid #00ff88;
+    cursor: pointer;
+    align-items: center;
+}
+
+.banner-btn .spotify-btn {
+    align-items: center;
+}
