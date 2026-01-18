@@ -30,7 +30,7 @@
 
 /* background color */
 .linear-bg {
-    background: linear-gradient(to right,
+    background: linear-gradient(45deg,
             #f3c94a 0%,
             #ff6b8a 35%,
             #c84dbb 60%,
@@ -40,13 +40,13 @@
 
 /* color text */
 .primary-color {
-    background: linear-gradient(to right,
+    background: linear-gradient(45deg,
             #f3c94a 0%,
             #ff6b8a 35%,
             #c84dbb 60%,
             #8e5ae3 80%,
             #6b5cff 100%);
-    display: inline-block;
+    /* display: inline-block; */
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -59,12 +59,55 @@ h3 {
     color: rgba(255, 255, 255, 1);
 }
 
+.display-flex {
+    display: flex;
+}
+    
+.primary-btn {
+    font-weight: 500;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 46px;
+    gap: 8px;
+}
+
 /* shared style :start */
 
 /* header style start */
 header {
     background: url("../assets/hero-bg.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: 100% auto;
+    background-position: unset;
+    background-attachment: scroll;
     min-height: 100dvh;
+}
+
+/* nav style here */
+.nav-container {
+    justify-content: space-between;
+    align-items: center;
+    padding-block: clamp(1.25rem, 3vw, 1.875rem);
+}
+
+.nav-container .nav-logo {
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: 800;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.nav-container .menu {
+    gap: 1.8rem;
+}
+
+.menu .menu-list {
+    list-style: none;
+}
+
+.menu .menu-link {
+    text-decoration: none;
+    color: #e8e6ea;
 }
