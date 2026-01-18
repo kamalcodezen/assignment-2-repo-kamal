@@ -80,7 +80,7 @@ h3 {
 /* shared style :start */
 
 /* header style start */
-header {
+.banner {
     background: url("../assets/hero-bg.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -90,6 +90,10 @@ header {
 }
 
 /* nav style here */
+.nav {
+    background-color: #1a0c30;
+}
+
 .nav-container {
     justify-content: space-between;
     align-items: center;
@@ -126,26 +130,45 @@ header {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding-block: clamp(3rem, 7vw, 6.3125rem);
+    padding-block: clamp(3rem, 6vw, 5.9375rem);
 }
 
 .banner-container .banner-img {
-    width: clamp(14rem, 30vw, 21.875rem);
-    height: clamp(14rem, 30vw, 21.875rem);
-    border-radius: 50%;
+    width: clamp(16rem, 35vw, 21.875rem);
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    position: relative;
+    margin-bottom: clamp(1.25rem, 2.5vw, 2.5rem);
 }
 
-.banner-img:hover {
-    background-color: white;
+.banner-round-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 1;
 }
 
-.banner-img img {
-    width: clamp(14rem, 28vw, 20.9375rem);
-    height: clamp(14rem, 28vw, 20.9375rem);
-    object-fit: cover;
+.microphone {
+    width: clamp(4.5rem, 10vw, 7.25rem);
+    height: auto;
+    position: absolute;
+    z-index: 2;
+}
+
+.banner-badge {
+    background-color: #00ff88;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 46px;
+    font-weight: 600;
+    position: absolute;
+    z-index: 3;
+    top: 4%;
+  left: 72%;
+}
+
+/* .banner-round-img:hover {
+    border: 3px solid yellow;
     border-radius: 50%;
-}
+} */
