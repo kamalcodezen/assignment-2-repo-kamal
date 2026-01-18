@@ -58,6 +58,7 @@
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 700;
     line-height: clamp(2.5rem, 6vw, 3.625rem);
+    text-align: center;
 }
 
 .display-flex {
