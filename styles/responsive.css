@@ -48,4 +48,15 @@
             " career      career     career";
 
     }
+
+    .host-content {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .host-media {
+        justify-content: center;
+        padding-top: 1rem;
+    }
 }
