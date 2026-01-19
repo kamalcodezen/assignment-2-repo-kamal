@@ -448,3 +448,44 @@
     width: 1.125rem;
     height: 1.125rem;
 }
+
+/* /* footer section style here * */
+footer {
+    background-image: url("../assets/footer-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: clamp(3.5rem, 8vw, 7.5rem);
+}
+
+.footer-container .footer-logo {
+    font-size: clamp(2.5rem, 8vw, 4.0625rem);
+    font-weight: 800;
+    color: white;
+    margin-bottom: clamp(1.25rem, 4vw, 2rem);
+}
+
+.footer-container .footer-social {
+    gap: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.footer-social .footer-media {
+    gap: 8px;
+    margin-bottom: clamp(1.25rem, 4vw, 2rem);
+}
+
+.footer-social .footer-media img {
+    width: 1.5rem;
+    height: 1.4rem;
+    object-fit: contain;
+}
+
+.footer-container .copyright {
+    line-height: 24px;
+    text-align: center;
+}
