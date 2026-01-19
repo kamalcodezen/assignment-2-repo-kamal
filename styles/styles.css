@@ -422,3 +422,28 @@
 .host-info .host-text {
     margin-bottom: clamp(0.5rem, 1.5vw, 1rem)
 }
+
+.host-info .host-media {
+    align-items: center;
+    gap: 8px;
+}
+
+.host-media .insta,
+.host-media .youtube,
+.host-media .meta-x,
+.host-media .linkedin {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 3px solid #533c72;
+    align-items: center;
+    justify-content: center;
+}
+
+.host-media .insta img,
+.host-media .youtube img,
+.host-media .meta-x img,
+.host-media .linkedin img {
+    width: 1.125rem;
+    height: 1.125rem;
+}
