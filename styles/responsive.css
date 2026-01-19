@@ -60,13 +60,14 @@
         padding-top: 1rem;
     }
 
+    /* footer section here */
     .footer-social {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
-/* 
+
     .footer-container .copyright {
         justify-content: center;
-    } */
+    }
 }

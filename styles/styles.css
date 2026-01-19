@@ -4,6 +4,8 @@
 /* --all  body  */
 .font-inter {
     font-family: "Inter", sans-serif;
+    background-color: #1a0b2e;
+
 }
 
 * {
@@ -23,8 +25,8 @@
 /* P tag gray color */
 .gray-color {
     color: #aa9fb8;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 300;
     line-height: clamp(1.25rem, 2vw, 1.5rem);
 }
 
@@ -84,12 +86,12 @@
 
 /* header style start */
 .banner {
+    background-color: #1a0c30;
     background: url("../assets/hero-bg.png");
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: unset;
-    background-attachment: scroll;
-    min-height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    /* min-height: 100dvh; */
 }
 
 /* nav style here */
@@ -106,6 +108,7 @@
 .nav-container .nav-logo {
     font-size: clamp(1.75rem, 3vw, 2.25rem);
     font-weight: 800;
+    color: white;
 }
 
 .menu-icon {
@@ -187,7 +190,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 8px;
+    gap: 6px;
 
 }
 
@@ -451,9 +454,11 @@
 
 /* /* footer section style here * */
 footer {
+    background-color: #211142;
     background-image: url("../assets/footer-bg.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer .footer-container {
@@ -467,7 +472,7 @@ footer .footer-container {
     font-size: clamp(2.5rem, 8vw, 4.0625rem);
     font-weight: 800;
     color: white;
-    margin-bottom: clamp(1.25rem, 4vw, 2rem);
+    padding-bottom: 1.125rem;
 }
 
 .footer-container .footer-social {
