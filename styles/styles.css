@@ -80,10 +80,37 @@ html {
     gap: 8px;
     border: none;
     cursor: pointer;
+    transition: 1s;
+    animation: my-animation 2s infinite 0.2s ease-in alternate;
 }
 
-.hide {
-    display: none;
+@keyframes my-animation {
+    0% {
+        background-color: #09fb31;
+    }
+
+    25% {
+        background-color: #1cc81076;
+    }
+
+    50% {
+        background-color: #1075da;
+
+    }
+
+    75% {
+        background-color: rgb(140, 255, 0);
+
+    }
+
+    100% {
+        background-color: #04f987;
+
+    }
+}
+
+.primary-btn:hover {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.729), rgb(180, 9, 222), rgba(255, 255, 0, 0.698));
 }
 
 /* shared style :start */
@@ -217,7 +244,7 @@ html {
 
 @keyframes uddin {
     0% {
-        transform: scale(1, 1);
+        transform: scale(1,1);
     }
 
     50% {
@@ -225,7 +252,7 @@ html {
     }
 
     100% {
-        transform: scale(1.3);
+        transform: scale(1.2);
         opacity: 0;
     }
 }
@@ -241,6 +268,7 @@ html {
     z-index: 3;
     top: 4%;
     left: 72%;
+    animation: my-animation 2s infinite 0.3s ease-in alternate;
 }
 
 .banner-content {
@@ -275,7 +303,15 @@ html {
     border: 1px solid #00ff88;
     cursor: pointer;
     align-items: center;
+    transition: 1s 2s;
 }
+
+.banner-btn .subscribe-btn:hover {
+    background: linear-gradient(45deg,
+            #f3c94a 0%,
+            #6b5cff 100%);
+}
+
 
 .banner-btn .spotify-btn {
     align-items: center;
