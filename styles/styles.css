@@ -290,15 +290,18 @@
     line-height: clamp(1.25rem, 2vw, 1.5rem);
 }
 
+.choose-box .box>img {
+    width: 50px;
+    height: 50px;
+}
+
 .choose-box .premium-box {
     grid-area: premium;
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
-
-    justify-items: flex-start;
     justify-content: center;
-
 }
+
 
 .choose-box .mobile-box {
     grid-area: mobile;
