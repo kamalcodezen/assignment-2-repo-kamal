@@ -347,7 +347,12 @@
 
 }
 
-.card>iframe {
+.card .video {
+    position: relative;
+    width: 100%;
+}
+
+.video>iframe {
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
@@ -355,6 +360,20 @@
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
     border: none;
+}
+
+.video .play-btn {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    inset: 0;
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    pointer-events: none;
+    /* aspect-ratio: 1; */
+
 }
 
 .card .card-details {
