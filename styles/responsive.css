@@ -39,4 +39,13 @@
             " exclusive   exclusive     exclusive "
             " rich        rich          rich";
     }
+
+    /* feature section */
+    .feature-container .feature-box {
+        grid-template-areas:
+            " future      future   future"
+            " remote      remote    remote"
+            " career      career     career";
+
+    }
 }
