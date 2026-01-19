@@ -331,3 +331,69 @@
 .feature .feature-container {
     padding-block: clamp(3.75rem, 8vw, 7.5rem);
 }
+
+.feature-box .card {
+    width: 100%;
+    /* max-width: clamp(20rem, 35vw, 23.75rem); */
+    border-radius: 24px;
+    background-color: #230e3d;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.card>iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    display: block;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border: none;
+}
+
+.card .card-details {
+    padding: 24px;
+}
+
+.card-details>h3 {
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    font-weight: 700;
+    margin-bottom: clamp(0.5rem, 1.2vw, 0.75rem);
+    color: white;
+
+}
+
+.card-details .card-info {
+    margin-bottom: clamp(0.5rem, 1.2vw, 0.75rem);
+
+}
+
+.card-details .video-time {
+    color: #00ff88;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.feature-box .future-card {
+    grid-area: future;
+}
+
+.feature-box .remote-card {
+    grid-area: remote;
+}
+
+.feature-box .career-card {
+    grid-area: career;
+}
+
+.feature-container .feature-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    gap: clamp(1rem, 3vw, 1.875rem);
+    grid-template-areas:
+        " future   remote    career";
+}
