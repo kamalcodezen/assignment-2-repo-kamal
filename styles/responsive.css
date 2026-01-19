@@ -29,4 +29,14 @@
         grid-template-columns: repeat(2, 1fr);
         row-gap: 20px;
     }
+
+    /* choose section */
+    .choose-container .choose-box {
+        grid-template-areas:
+            " premium     premium       premium  "
+            " mobile      mobile        mobile"
+            " global      global        global"
+            " exclusive   exclusive     exclusive "
+            " rich        rich          rich";
+    }
 }

@@ -323,7 +323,6 @@
 
 .choose-container .choose-box {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
     gap: clamp(1rem, 3vw, 1.875rem);
     grid-template-areas:
         " premium  mobile  mobile mobile"
