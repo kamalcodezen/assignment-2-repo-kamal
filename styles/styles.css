@@ -175,23 +175,13 @@ html {
 }
 
 
-.nav-container .flip {
+.nav-container .nav-logo {
     font-size: clamp(1.75rem, 3vw, 2.25rem);
     font-weight: 800;
     color: white;
     -webkit-perspective: 700px;
     perspective: 700px;
-    animation: round 6s infinite linear;
-}
-
-@keyframes round {
-    35% {
-        transform: rotateZ(360deg);
-    }
-
-    100% {
-        transform: rotateZ(360deg);
-    }
+    /* animation: round 6s infinite linear; */
 }
 
 .nav-logo>span {
