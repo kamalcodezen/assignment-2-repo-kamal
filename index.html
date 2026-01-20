@@ -22,27 +22,36 @@
 
 <body class="font-inter">
 
-    <!-- ==header area style start== -->
+    <nav class="nav-container container">
 
-    <!-- <section class="nav"> -->
-    <!-- nav area start -->
-    <nav class="nav-container  container  display-flex">
-        <div class="nav-logo">
-            <span>T</span><span>e</span><span>c</span><span>h</span><span class="primary-color">W</span><span
-                class="primary-color">a</span><span class="primary-color">v</span><span class="primary-color">e</span>
-        </div>
-        <ul class="menu  display-flex">
+        <!-- Logo -->
+        <h1 class="flip">
+            <span class="flip">T</span><span class="flip">e</span><span class="flip">c</span><span
+                class="flip">h</span><span class="linear">Wave</span>
+        </h1>
+
+        <!-- Mobile toggle (logic) -->
+        <input type="checkbox" id="menu-toggle" hidden>
+
+        <!-- Menu -->
+        <ul class="menu">
             <li class="menu-list"><a class="menu-link" href="#">About</a></li>
             <li class="menu-list"><a class="menu-link" href="#">Episodes</a></li>
             <li class="menu-list"><a class="menu-link" href="#">Host</a></li>
         </ul>
-        <div class="menu-btn">
-            <button class="primary-btn  linear-bg  display-flex">Subscribe<i
-                    class="fa-solid fa-arrow-right"></i></button>
-        </div>
-        <span class="menu-icon"><img src="./assets/hamburger-menu.png" alt=""></span>
+
+        <!-- CTA -->
+        <a href="#" class="primary-btn nav-btn linear-bg">
+            Subscribe <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <!-- Hamburger -->
+        <label for="menu-toggle" class="menu-icon">
+            <img src="./assets/hamburger-menu.png" alt="Menu">
+        </label>
+
     </nav>
-    <!-- </section> -->
+
     <!-- nav area end -->
 
     <header>
@@ -68,8 +77,7 @@
 
                     <div class="banner-btn  display-flex">
                         <button class=" spotify-btn display-flex primary-btn  linear-bg"><img src="./assets/spotify.png"
-                                alt="">Listen on
-                            Spotify
+                                alt="">Listen on Spotify
                         </button>
                         <button class="subscribe-btn  display-flex"><img src="./assets/message.png" alt="">Subscribe
                         </button>
@@ -283,8 +291,9 @@
     <!-- footer area start -->
     <footer>
         <div class="footer-container container  display-flex">
-            <h2 class="footer-logo">Tech<span class="primary-color">Wave</span></h2>
+            <h2 class="footer-logo">Tech<span class="primary-color linear">Wave</span></h2>
             <div class="footer-social  display-flex">
+
                 <div class="footer-media  display-flex">
                     <img src="./assets/spotify.png" alt="">
                     <p class="social-name  gray-color">Spotify</p>
