@@ -1,31 +1,52 @@
-/* GOOGLE FONT */
+/* ================= GOOGLE FONT ================= */
+/* KEEP → কারণ: Inter modern, readable, performance friendly */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-/* --all  body  */
+
+
+/* ================= CSS VARIABLES (ADD HERE) ================= */
+:root {
+    --bg-main: #1a0b2e;
+    --bg-card: #2a0f4d;
+    --primary: #00ff88;
+    --text-muted: #aa9fb8;
+}
+
+
+/* ================= BODY BASE ================= */
+/* KEEP → কারণ: পুরো site-এর base font + bg এক জায়গায় control */
 .font-inter {
     font-family: "Inter", sans-serif;
-    background-color: #1a0b2e;
-    text-rendering: optimizeLegibility;
+    background-color: var(--bg-main);
     overflow-x: hidden;
 }
 
+
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* ================= SELECTION ================= */
 ::selection {
     background: rgba(230, 83, 60, 1);
     color: #fff;
 }
 
+
+/* ================= FOCUS ================= */
+/* KEEP →  keyboard user + accessibility */
 :focus-visible {
     outline: 2px solid rgba(230, 83, 60, 1);
     outline-offset: 3px;
 }
 
 /* shared style :start */
+/* ================= CONTAINER ================= */
+/* KEEP → responsive layout, max-width control */
 .container {
     width: 100%;
     max-width: 75rem;
@@ -39,7 +60,7 @@ html {
 
 /* P tag gray color */
 .gray-color {
-    color: #aa9fb8;
+    color: var(--text-muted);
     font-size: 1rem;
     font-weight: 300;
     line-height: clamp(1.25rem, 2vw, 1.5rem);
@@ -63,7 +84,6 @@ html {
             #c84dbb 60%,
             #8e5ae3 80%,
             #6b5cff 100%);
-    /* display: inline-block; */
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -92,6 +112,7 @@ html {
     animation: shine 4s linear infinite;
 }
 
+
 @keyframes shine {
     from {
         background-position: 0% center;
@@ -101,17 +122,6 @@ html {
         background-position: 300% center;
     }
 }
-
-@keyframes shine-text {
-    0% {
-        background-position: 0% center;
-    }
-
-    100% {
-        background-position: 300% center;
-    }
-}
-
 
 .display-flex {
     display: flex;
@@ -125,8 +135,8 @@ html {
     gap: 8px;
     border: none;
     cursor: pointer;
-    transition: 1s;
-    animation: my-animation 2s infinite 0.2s ease-in alternate;
+    transition: 0.4s;
+    animation: none;
 }
 
 @keyframes my-animation {
@@ -157,6 +167,7 @@ html {
 /* .subscribe-btn, */
 .primary-btn:hover {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.729), rgba(180, 9, 222, 0.604), rgba(255, 255, 0, 0.698));
+    animation: my-animation 1s;
 }
 
 /* shared style :start */
@@ -171,7 +182,8 @@ html {
     padding-block: 1rem;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
+    /* margin-bottom: clamp(3rem, 6vw, 4rem); */
 }
 
 
@@ -202,10 +214,10 @@ html {
     -webkit-text-fill-color: transparent;
 
     background-size: 200% auto;
-    animation: shine 3s ease-in-out infinite;
+    animation: snake 3s ease-in-out infinite;
 }
 
-@keyframes shine {
+@keyframes snake {
     to {
         background-position: 200% center;
     }
@@ -235,12 +247,9 @@ html {
 /* NAV MENU LINK BASE */
 .menu a {
     text-decoration: none;
-    color: var(--text-main);
-    font-size: var(--fs-body);
     font-weight: 500;
     position: relative;
     display: block;
-    padding: 4px 0;
     transition: color 0.3s ease;
 }
 
@@ -283,11 +292,14 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-block: 80px;
+    padding-top: clamp(4rem, 8vw, 5rem);
+    padding-bottom: clamp(3rem, 6vw, 4rem);
+
 }
 
 .banner-container {
-    min-height: 100%;
+    /* min-height: 100%; */
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -366,15 +378,14 @@ html {
 .banner-badge {
     background-color: #00ff88;
     padding: 8px 16px;
-    color: #00ff88;
     border: 1px solid #00ff88;
     border-radius: 46px;
-    font-weight: 600;
+    font-weight: 700;
     position: absolute;
     z-index: 3;
     top: 4%;
     left: 72%;
-    animation: my-animation 2s infinite 0.3s ease-in alternate;
+    animation: none;
 }
 
 
@@ -483,6 +494,7 @@ html {
 .choose-container,
 .choose-box {
     overflow: visible;
+
 }
 
 .choose-box {
@@ -490,16 +502,17 @@ html {
     gap: 2rem;
 }
 
-/* /*   box animation * */
+/*   box animation * */
 .choose-box .box>img {
     margin-bottom: 1rem;
 }
 
 .choose-box .box>h3 {
     font-size: clamp(1.125rem, 2.5vw, 1.5rem);
-    font: 700;
+    font-weight: 700;
     color: white;
-    margin-bottom: clamp(0.5rem, 1.5vw, 1rem)
+    margin-bottom: clamp(0.5rem, 1.5vw, 1rem);
+
 }
 
 .choose-box .box>p {
@@ -512,6 +525,7 @@ html {
 .choose-box .box>img {
     width: 50px;
     height: 50px;
+    z-index: 2;
 }
 
 .choose-box .premium-box {
@@ -529,6 +543,7 @@ html {
 
 .choose-box .global-box {
     grid-area: global;
+
 }
 
 .choose-box .exclusive-box {
@@ -548,7 +563,8 @@ html {
         " exclusive   exclusive   exclusive   rich";
 }
 
-/* ------animation---- */
+
+/* ------animation----   */
 .box::before {
     content: "";
     position: absolute;
@@ -605,7 +621,6 @@ html {
 }
 
 
-
 /* ========feature style here ==========*/
 #episodes {
     background: #1a0b2e;
@@ -625,11 +640,13 @@ html {
     transition: all 0.35s ease;
     position: relative;
     overflow: hidden;
+    z-index: 5;
 }
 
 .card .video {
     position: relative;
     width: 100%;
+    z-index: 5;
 }
 
 .video>iframe {
@@ -640,6 +657,7 @@ html {
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
     border: none;
+    z-index: 5;
 }
 
 /* .youtube play btn ================*/
@@ -674,6 +692,7 @@ html {
     border-bottom: 16px solid transparent;
     transition: opacity 0.3s ease;
 }
+
 
 /* ==================================== */
 .card .card-details {
@@ -830,7 +849,7 @@ footer {
     background-image: url("../assets/footer-bg.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 footer .footer-container {

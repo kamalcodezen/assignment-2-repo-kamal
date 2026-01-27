@@ -63,6 +63,9 @@
         display: inline-flex !important;
     }
 
+    .banner {
+        padding-top: calc(clamp(4rem, 8vw, 5rem) + 72px);
+    }
 
     /* about section */
     .about-container .about-count {
